@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+.primera_seccion {
+    background: url(./Assets/images/Backgrounds/Background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;    
+    /*border: solid red;*/
+    -webkit-animation-name: background_animation;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+@-webkit-keyframes  background_animation {
+    0% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
+    10% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
+    20% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
+    30% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
+    40% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
+    50% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
+    60% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
+    70% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
+    80% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
+    90% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
+    100% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
+
+}
+@media screen and (max-width:912px){
+    .primera_seccion{
+        flex-direction: column;
+    }
+}
+/*--------------------------------------Animacion de pas pc--------------------*/
+.slider_frame {
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+    height: 340px;
+    position: relative;
+    /*border: solid red;*/
+    display: flex;
+    justify-content: center;
+}
+.primer_pc {
+    /*border: solid blue;*/
+    width: 300px;
+    height: 340px;
+}
+@-webkit-keyframes slide_animation {
+    0% {left: 1200px;}
+    10% {left: 1200px;}
+    20% {left: 900px;}
+    30% {left: 900px;}
+    40% {left: 600px;}
+    50% {left: 600px;}
+    60% {left: 900px;}
+    70% {left: 900px;}
+    80% {left: 900px;}
+    90% {left: 1200px;}
+    100% {left: 1200px;}
+
+}
+.slide_images {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 340px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    /*border: solid purple;*/
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+/*----------------------------------------------------------------------------------*/
+.presentacion_container {
+    /*border: solid red;*/
+    text-align: center;
+    color: #7d2ae8;
+}
+.descripcion {
+    color: skyblue;
+}
+.texto {
+    color: grey;
+    width: 550px;
+    margin: auto;
+}
+@media screen and (max-width:912px){
+    .texto{
+        font-size: 10px;
+        width: 200px;
+    }
+}
+.banner_promocional {
+    background-image: linear-gradient(#7d2ae8,skyblue);
+    /*border: solid red;*/
+    height: 200px;
+    width: 100%;
+}
+.image_container_mouse {
+    background: url(./Assets/images/mouse/Mouse\ white.png);
+    background-size: 200px 170px;
+    margin: auto;
+    height: 170px;
+    width: 200px;
+}
+@media screen and (max-width:912px){
+    .image_container_mouse{
+        background: url(./Assets/images/mouse/Mouse\ white.png);
+        background-size: 200px 170px;
+    }
+}
+.promocion_mouse {
+    color: #040522;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width:912px){
+    .promocion_mouse{
+        font-size: 15px;
+    }
+}
+/*-------------------------------------------Segunda Seccion------------------*/
+.segunda_seccion {
+    background-color: #181818;
+    height: 85vh;
+    width: 100%;    
+    /*border: solid red;*/
+}
+.segunda_seccion_explain {
+    /*border: solid red;*/
+    color: #7d2ae8;
+    text-align: center;
+}
+.segunda_seccion_explain span {
+    color: skyblue;
+}
+.segunda_seccion_explain p {
+    color: grey;
+}
+.game_or_work {
+    color: grey;
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+}
+.for_game_container {
+    cursor: pointer;
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.for_game_container img {
+    height: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.for_game_container img:hover {
+    transform: scale(1.1);
+}
+.for_work_container {
+    cursor: pointer;
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.for_work_container img {
+    height: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.for_work_container img:hover {
+    transform: scale(1.1);
+}
+.build_section {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:912px){
+    .build_section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.games_or_works {
+    background-color: #9cabbe;
+    /*border: solid red;*/
+    margin-top: 10px;
+    height: 330px;
+    width: 500px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+@media screen and (max-width:912px){
+    .games_or_works{
+        width: 350px;
+        height: 220px;
+    }
+}
+@media screen and (max-width:400px){
+    .games_or_works{
+        width: 350px;
+        height: 190px;
+    }
+}
+@media screen and (max-width:380px){
+    .games_or_works{
+        width: 350px;
+        height: 150px;
+    }
+}
+.games_or_works img {
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+.juegos {
+    display: none;
+    /*display: inline-block;*/
+}
+.games_or_works img:hover {
+    transform: scale(1.1);
+}
+.divisor_componentes {
+    background-color: whitesmoke;
+    height: 1px;
+    width: 300px;
+}
+.components {
+    overflow: scroll;
+    background-color: #9cabbe;
+    /*border: solid red;*/
+    margin-top: 10px;
+    height: 330px;
+    width: 500px;
+    border-radius: 10px;
+}
+.components img {
+    height: 100px;
+    width: 150px;
+}
+.componentes_armados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trabajos {
+    display: none;
+    /*display: inline-block;*/
+}
+@media screen and (max-width:912px){
+    .components{
+        width: 350px;
+        height: 220px;
+    }
+}
+@media screen and (max-width:400px){
+    .components{
+        width: 350px;
+        height: 190px;
+    }
+}
+@media screen and (max-width:380px){
+    .components{
+        width: 350px;
+        height: 150px;
+    }
+}
+.redes {
+    /*border: solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.redes img {
+    cursor: pointer;
+}
+@media screen and (max-width:912px){
+    .redes{
+        display: none;
+    }
+}
+.line {
+    background-image: linear-gradient(#4cb8c4,#3cd3ad);
+    width: 1px;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.redes_responsive {
+    text-align: center;
+    /*border: solid red;*/
+    height: 200px;
+    background-color: #323232;
+    color: #9cabbe;
+    display: none;
+}
+
+@media screen and (max-width:912px){
+    .redes_responsive{
+        display: block;
+    }
+}
+.linea_divisoria {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    width: 250px;
+    background-image: linear-gradient(#4cb8c4,#3cd3ad);
+}
+.generar {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+    height: 50px;
+    width: 70px;
+    margin: 0;
+    background-color: #181818;
+    border: solid 1px whitesmoke;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.generar:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width:912px){
+    .generar{
+        margin-top: 5px;
+        height: 20px;
+        width: 50px;
+        font-size: 10px;
+    }
+}
+/*-----------------------------------------------display componentes---------------------*/
+/*-------------cores-----------------*/
+.i3 {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+.i5 {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+.i9 {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+/*-------------graphic cards----------------*/
+.grafica {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+/*--------------mother board-------------*/
+.board_gamer {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+.board_simple {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+/*------------------RAM-------------------*/
+.doble_ram_gamer {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+.cuadruple_ram_gamer {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+.ram_simple {
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    display: none;
+}
+/*------------------Storage---------------*/
+.ssd {
+    display: none;
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+.hd {
+    display: none;
+    -webkit-animation-name: component_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+@-webkit-keyframes  component_animation {
+    0%{margin-left: -20px;}
+    10%{margin-left: -10px;}
+    20%{margin-left: -5px;}
+    30%{margin-left: 0px;}
+    40%{margin-left: 0px;}
+    50%{margin-left: 0px;}
+    60%{margin-left: 0px;}
+    70%{margin-left: 0px;}
+    80%{margin-left: 0px;}
+    90%{margin-left: 0px;}
+    100%{margin-left: 0px;}
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+@media screen and (max-width:912px){
+    .buttons{
+        flex-direction: row;
+    }
+}
+.reset {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+    height: 50px;
+    width: 70px;
+    margin: 0;
+    background-color: #181818;
+    border: solid 1px whitesmoke;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.reset:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width:912px){
+    .reset{
+        margin-top: 5px;
+        height: 20px;
+        width: 50px;
+        font-size: 10px;
+    }
+}
