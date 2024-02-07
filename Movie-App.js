@@ -94,3 +94,6 @@ function fetchGamesData () {
 
 
 fetchGamesData()
+
+/*-----------------------Adjusting the games section to all screens---------------*/
+

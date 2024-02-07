@@ -1,3 +1,9 @@
+/*------------------------This is for PC only------------------*/
+if(window.screen.width <= 500){
+  alert("este juego es para PC : This game is only for PC")
+}
+
+
 /*-------------------Keys---------------------------*/ 
 const firstRow = document.querySelector(".first_row")
 const secondRow = document.querySelector(".second_row")

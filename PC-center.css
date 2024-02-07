@@ -22,17 +22,17 @@ body {
     -webkit-animation-play-state: running;
 }
 @-webkit-keyframes  background_animation {
-    0% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
-    10% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
-    20% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
-    30% {background: url(./Assets/images/Backgrounds/Background\ 1.png);}
-    40% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
-    50% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
-    60% {background: url(./Assets/images/Backgrounds/Background\ 2.png);}
-    70% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
-    80% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
-    90% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
-    100% {background: url(./Assets/images/Backgrounds/Background\ 3.png);}
+    0% {background: url(./Assets/images/Backgrounds/Background\ 1.webp);}
+    10% {background: url(./Assets/images/Backgrounds/Background\ 1.webp);}
+    20% {background: url(./Assets/images/Backgrounds/Background\ 1.webp);}
+    30% {background: url(./Assets/images/Backgrounds/Background\ 1.webp);}
+    40% {background: url(./Assets/images/Backgrounds/background\ 2.webp);}
+    50% {background: url(./Assets/images/Backgrounds/background\ 2.webp);}
+    60% {background: url(./Assets/images/Backgrounds/background\ 2.webp);}
+    70% {background: url(./Assets/images/Backgrounds/Background\ 3.webp);}
+    80% {background: url(./Assets/images/Backgrounds/Background\ 3.webp);}
+    90% {background: url(./Assets/images/Backgrounds/Background\ 3.webp);}
+    100% {background: url(./Assets/images/Backgrounds/Background\ 3.webp);}
 
 }
 @media screen and (max-width:912px){
@@ -111,7 +111,7 @@ body {
     width: 100%;
 }
 .image_container_mouse {
-    background: url(./Assets/images/mouse/Mouse\ white.png);
+    background: url(./Assets/images/mouse/Mouse\ white.webp);
     background-size: 200px 170px;
     margin: auto;
     height: 170px;
@@ -119,7 +119,7 @@ body {
 }
 @media screen and (max-width:912px){
     .image_container_mouse{
-        background: url(./Assets/images/mouse/Mouse\ white.png);
+        background: url(./Assets/images/mouse/Mouse\ white.webp);
         background-size: 200px 170px;
     }
 }
