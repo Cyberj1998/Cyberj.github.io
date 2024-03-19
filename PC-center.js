@@ -5,6 +5,25 @@ const works = document.querySelector(".trabajos")
 
 let gameShowing = false
 let worksShowing = false
+/*-------------------------------------Slider---------------------*/
+const sliderMenu = document.querySelector(".slider")
+const burgerMenu = document.querySelector(".burger") 
+let sliderShow = false
+
+burgerMenu.addEventListener("click",()=>{
+    if(sliderShow == false){
+        sliderMenu.style.marginLeft = "0"
+        sliderShow = true
+    }
+    else{
+        sliderMenu.style.marginLeft = "-30%"
+        sliderShow = false
+    }
+})
+window.addEventListener("scroll",()=>{
+    sliderMenu.style.marginLeft = "-30%"
+    sliderShow = false
+})
 /*---------------------------------------Display games or Works-----------------------------*/ 
 forGame.addEventListener("click",()=>{
     i5.style.display="none"

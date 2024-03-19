@@ -40,21 +40,33 @@ body {
         flex-direction: column;
     }
 }
-/*--------------------------------------Animacion de pas pc--------------------*/
+/*----------------------------------PC Animation--------------------*/
 .slider_frame {
+    /*border: solid red;*/
     overflow: hidden;
     margin: auto;
     width: 300px;
     height: 340px;
     position: relative;
-    /*border: solid red;*/
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width:912px){
+    .slider_frame{
+        height: 250px;
+        width: 200px;
+    }
 }
 .primer_pc {
     /*border: solid blue;*/
     width: 300px;
     height: 340px;
+}
+@media screen and (max-width:912px){
+    .primer_pc{
+        height: 250px;
+        width: 200px;
+    }
 }
 @-webkit-keyframes slide_animation {
     0% {left: 1200px;}
@@ -68,21 +80,40 @@ body {
     80% {left: 900px;}
     90% {left: 1200px;}
     100% {left: 1200px;}
-
+}
+@-webkit-keyframes slide_animation_responsive {
+    0% {left: 1200px;}
+    10% {left: 1200px;}
+    20% {left: 1200px;}
+    30% {left: 1000px;}
+    40% {left: 1000px;}
+    50% {left: 1000px;}
+    60% {left: 800px;}
+    70% {left: 800px;}
+    80% {left: 800px;}
+    90% {left: 1200px;}
+    100% {left: 1200px;}
 }
 .slide_images {
+    /*border: solid purple;*/
     display: flex;
     flex-direction: row;
     width: 300px;
     height: 340px;
     margin: 0 0 0 -2400px;
     position: relative;
-    /*border: solid purple;*/
     -webkit-animation-name: slide_animation;
     -webkit-animation-duration: 20s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
+}
+@media screen and (max-width:912px){
+    .slide_images{
+        height: 250px;
+        width: 200px;
+        -webkit-animation-name: slide_animation_responsive;
+    }
 }
 /*----------------------------------------------------------------------------------*/
 .presentacion_container {
@@ -137,10 +168,15 @@ body {
 }
 /*-------------------------------------------Segunda Seccion------------------*/
 .segunda_seccion {
-    background-color: #181818;
-    height: 85vh;
+    background-color: #202222;
+    height: 90vh;
     width: 100%;    
     /*border: solid red;*/
+}
+@media screen and (max-width:912px){
+    .segunda_seccion{
+        height: 750px;
+    }
 }
 .segunda_seccion_explain {
     /*border: solid red;*/
@@ -318,6 +354,7 @@ body {
     background-color: #323232;
     color: #9cabbe;
     display: none;
+    max-height: 100px;
 }
 
 @media screen and (max-width:912px){

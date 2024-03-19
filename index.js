@@ -1,6 +1,7 @@
 const primerPanel = document.getElementById('project1')
 const segundoPanel = document.getElementById('project2')
 const tercerPanel = document.getElementById('project3')
+const cuartoPanel = document.getElementById('project4')
 const lenguajeToggle = document.querySelector(".toggle")
 
 
@@ -18,10 +19,15 @@ setTimeout(() => {
     tercerPanel.classList.add("image_animation")
 }, 200);
 
+setTimeout(() => {
+    cuartoPanel.style.display = "block"
+    cuartoPanel.classList.add("image_animation")
+}, 300);
+
 
 //-----------------CHANGE LENUGAGE------------------
 
-let españolBio = ("Desarrollador Web Front-End Autodidacta con fuertes conocimientos de HTML/CSS y React hábil para crear intuitivas web apps faciles de usar y entender para el usuario promedio")
+let españolBio = ("Desarrollador Web Front-End Autodidacta con fuertes conocimientos de HTML/CSS y React hábil para crear intuitivas web apps faciles de usar y entender para el usuario")
 
 let españolResumen = ("Disfruto resolviendo problemas con soluciones escalables y con un codigo limpio y legible. Tengo una genuina pasión por crear diseños inspiradores y acordes a las tendencias actuales")
 
