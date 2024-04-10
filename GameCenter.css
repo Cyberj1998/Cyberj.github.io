@@ -1,0 +1,495 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*---------------------------------navigation bar---------------------------------------*/
+.nav {
+    /*border: solid red;*/
+    height: 50px;
+    width: 100%;
+    background-color: #180a22;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 600;
+    position: absolute;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+}
+@media screen and (max-width:600px){
+    .logo {
+        margin: 10px;
+    }
+}
+.nav_options {
+    /*border: solid greenyellow;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.nav_options li {
+    margin: 10px;
+}
+@media screen and (max-width:900px){
+    .nav_options li {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .nav_options {
+        margin-right: 10px;
+    }
+}
+/*--------------------------------------Hero Section---------------------------------*/
+.hero_section {
+    /*border: solid blue;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    --s: 60px;
+  --c1: #180a22;
+  --c2: #5b42f3;
+  --_g: radial-gradient(
+    25% 25% at 25% 25%,
+    var(--c1) 99%,
+    rgba(0, 0, 0, 0) 101%
+  );
+  background: var(--_g) var(--s) var(--s) / calc(2 * var(--s))
+      calc(2 * var(--s)),
+    var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s)
+      var(--s),
+    repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%)
+      calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+@media screen and (max-width:600px){
+    .hero_section {
+        flex-direction: column;
+    }
+}
+.presentation_container {
+    /*border: solid greenyellow;*/
+    background-image: url(./Assets/GameCenter/transparent_background.png);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media screen and (max-width:600px){
+    .presentation_container {
+        height: 50%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .presentation_right {
+        height: 50%;
+        width: 100%;
+    }
+}
+.hero_button {
+    height: 30px;
+    width: 100px;
+    margin-left: 50px;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+@media screen and (max-width:800px){
+    .hero_button {
+        height: 20px;
+        width: 100px;
+        margin-left: 20px;
+    }
+}
+.glitch {
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 3px;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+span {
+    color: #180a22;
+}
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+  
+.glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00ffff;
+    z-index: -1;
+}
+  
+.glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+      infinite;
+    color: #ff00ff;
+    z-index: -2;
+}
+  
+@keyframes glitch-it {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    to {
+      transform: translate(0);
+    }
+}
+@media screen and (max-width:800px){
+    .glitch {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+.hero_p {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-left: 50px;
+    font-size: 20px;
+}
+@media screen and (max-width:800px){
+    .hero_p {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}
+.rawg_api {
+    color: #00ffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.second_hero_button {
+    height: 30px;
+    width: 200px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: solid 1px aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    text-align: center;
+}
+@media screen and (max-width:800px){
+    .second_hero_button {
+        height: 20px;
+        width: 200px;
+        margin-left: 20px;
+    }
+}
+.second_hero_button:hover {
+    background-color: aqua;
+    color: grey;
+}
+/*--------------------------------------Hero Section Right----------------------------*/
+.presentation_right {
+    /*border: solid aqua;*/
+    background-image: url(./Assets/GameCenter/transparent_background.png);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:600px){
+    .presentation_right {
+        height: 50%;
+        width: 100%;
+    }
+}
+.valorant_stormgate_container {
+    /*border: solid yellow;*/
+    border: solid 1px whitesmoke;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+@media screen and (max-width:1000px){
+    .valorant_stormgate_container {
+        height: 300px;
+        width: 300px;
+    }
+}
+.valorant_card {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transform: rotate(-30deg);
+    transition: 0.5s;
+}
+@media screen and (max-width:900px){
+    .valorant_card {
+        height: 200px;
+        width: 150px;
+    }
+}
+.valorant_card:hover {
+    margin-top: -50px;
+    transform: rotate(-10deg);
+}
+.stormgate_card {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: rotate(-40deg);
+    margin-left: -50px;
+    transition: 0.5s;
+}
+@media screen and (max-width:900px){
+    .stormgate_card {
+        height: 200px;
+        width: 150px;
+    }
+}
+.stormgate_card:hover {
+    z-index: 2;
+    margin-top: -50px;
+    transform: rotate(-10deg);
+}
+.text {
+    display: inline-block;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid #00ffff; /* Cursor */
+    animation: typeAndDelete 4s steps(20) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+}
+.text span {
+    color: #00ffff;
+}
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 22em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+}
+/*-------------------------------------------Games Section----------------------------*/
+.games_section {
+    /*border: solid yellow;*/
+    background-color: #1b1b2f;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.games_section_title {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.games_section_title span {
+    color: aqua;
+}
+.line {
+    background-color: aquamarine;
+    height: 2px;
+    width: 30%;
+}
+.games_container {
+    border: solid 1px whitesmoke;
+    overflow: scroll;
+    border-top: none;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.panel_container {
+    /*border: solid red;*/
+    height: 90%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fetch_panel {
+    /*border: solid red;*/
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#fetch_options {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #180a22;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:900px){
+    #fetch_options {
+        font-size: 10px;
+    }
+}
+/*--------------------------------------------Games Card----------------------*/
+.game_card {
+    /*border: solid mediumvioletred;*/
+    height: 300px;
+    width: 200px;
+    border-radius: 1px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image_section {
+    /*border: solid lawngreen;*/
+    height: 50%;
+    width: 100%;
+    background-image: url(./Assets/GameCenter/new-stormgate-gameplay.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.game_title {
+    color: #180a22;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    border-radius: 0 10px 0 0;
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+}
+.game_info_section {
+    /*border: solid khaki;*/
+    background-color: #180a22;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.game_info {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.game_more_info {
+    border: solid 1px whitesmoke;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00ffff;
+    transition: 0.5s;
+}
+.game_more_info:hover {
+    background-color: #00ffff;
+    color: #180a22;
+}
+.game_rating {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+} 
+.platform {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: grey;
+}
+.rating {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+.start {
+    height: 10px;
+    width: 10px;
+}

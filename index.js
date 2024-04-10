@@ -2,6 +2,8 @@ const primerPanel = document.getElementById('project1')
 const segundoPanel = document.getElementById('project2')
 const tercerPanel = document.getElementById('project3')
 const cuartoPanel = document.getElementById('project4')
+const quintoPanel = document.getElementById('project5')
+sextoPanel = document.getElementById('project6')
 const lenguajeToggle = document.querySelector(".toggle")
 
 
@@ -12,17 +14,27 @@ primerPanel.classList.add("image_animation")
 setTimeout(() => {
     segundoPanel.style.display = "block"
     segundoPanel.classList.add("image_animation")
-}, 100);
+}, 1000);
 
 setTimeout(() => {
     tercerPanel.style.display = "block"
     tercerPanel.classList.add("image_animation")
-}, 200);
+}, 2000);
 
 setTimeout(() => {
     cuartoPanel.style.display = "block"
     cuartoPanel.classList.add("image_animation")
-}, 300);
+}, 3000);
+
+setTimeout(() => {
+    quintoPanel.style.display = "block"
+    quintoPanel.classList.add("image_animation")
+}, 4000);
+
+setTimeout(() => {
+    sextoPanel.style.display = "block"
+    sextoPanel.classList.add("image_animation")
+}, 5000);
 
 
 //-----------------CHANGE LENUGAGE------------------

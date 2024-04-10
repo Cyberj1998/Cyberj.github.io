@@ -14,7 +14,7 @@ const thirtRowLetters = ["Z","X","C","V","B","N","M"]
 /*-----------------text to type---------------------------*/ 
 const textArea = document.querySelector(".text_area")
 const generate = document.querySelector(".generate")
-const text = ("loremipsumdolor")
+const text = ("her hair is harlow gold her lips sweet surprise her hands are never cold she's got bette davis eyes she'll turn the music on you you won't have to think twice she's pure as new york snow she got bette davis eyes and she'll tease you she'll unease you all the better just to please you she's precocious, and she knows just what it takes to make a pro blush she got greta garbo's standoff sighs she's got bette davis eyes")
 textArray = text.split('')
 
 let firstLetter = false

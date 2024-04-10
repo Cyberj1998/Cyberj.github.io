@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Favicons/Game-Center.ico" type="image/x-icon">
+    <link rel="icon" href="./Assets/Favicons/Game-Center.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./GameCenter.css">
+    <title>Game Center</title>
+</head>
+<body>
+    <!------------------------navigation bar--------------------->
+    <div class="nav">
+        <img src="./Assets/GameCenter/Logo.webp" alt="logo" class="logo">
+        <ul class="nav_options">
+            <li>Games</li>
+            <li>Tournaments</li>
+            <li>Teams</li>
+            <li>About Us</li>
+        </ul>
+    </div>
+    <!---------------------------Hero Section------------------------------>
+    <div class="hero_section">
+        <div class="presentation_container">
+            <button class="hero_button">Start</button>
+            <div class="glitch" data-text="GAME CENTER Games & More"><span>GAME</span> CENTER <br>Games & More...</div>
+            <p class="hero_p">We have a library of games powered by <span class="rawg_api">RAWG.IO API</span>, plus you can explore Blizzard veterans new RTS game Stormgate ladder and check on some cool info about Riot Games FPS Valorant </p>
+            <button class="second_hero_button">Explore</button>
+        </div>
+        <div class="presentation_right">
+            <div class="valorant_stormgate_container">
+                <img class="valorant_card" src="./Assets/GameCenter/Valorant.png" alt="Valorant">
+                <img class="stormgate_card" src="./Assets/GameCenter/Stormgate_card.png" alt="Valorant">
+            </div>
+            <div class="text">Explore <span>Stormgate</span> Ladder and <span>Valorant</span> Stats</div>
+        </div>
+    </div>
+    <!-----------------------------Games Section-------------------------------->
+    <div class="games_section">
+        <h2 class="games_section_title">Popular <span>Games</span></h2>
+        <div class="line"></div>
+        <div class="panel_container">
+            <div class="games_container">
+                <!------------------------game Card Prototype---------------------->
+                <!--
+                <div class="game_card">
+                    <div class="image_section">
+                         <button class="game_title">Stormgate</button>
+                         <p class="game_rating">*****</p>
+                    </div>
+                    <div class="game_info_section">
+                        <p class="game_info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga ad earum rerum aliquid mollitia velit!</p>
+                        <button class="game_more_info">more info</button>
+                    </div>
+                </div>
+                -->
+                <div class="categories_title"></div>
+            </div>
+            <div class="fetch_panel">
+                <div id="fetch_options" class="last_days">This Month</div>
+                <div id="fetch_options" class="this_week">This Week</div>
+                <div id="fetch_options" class="Next_week">Next Releases</div>
+                <div id="fetch_options" class="last_year">Last Year</div>
+            </div>
+        </div>
+    </div>
+    <script src="./GameCenter.js"></script>
+</body>
+</html>

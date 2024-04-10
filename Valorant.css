@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /*border: solid red;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel {
+    /*border: solid blue;*/
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Assets/GameCenter/Valorant/Valorant_background_design_new.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0% 100%,
+    0% 100%,
+    100% 0%,
+    50% 0%
+    );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.image_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players {
+    /*border: solid aquamarine;*/
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+/*-------------------------Bouncing Animation---------------------*/
+  #ball:nth-child(1) {
+    animation: bounce-1 2.1s ease-in-out infinite;
+  }
+  
+  @keyframes bounce-1 {
+    50% {
+      transform: translateY(-18px);
+    }
+  }
+  
+  #ball:nth-child(2) {
+    animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+  }
+  
+  @keyframes bounce-2 {
+    50% {
+      transform: translateY(-18px);
+    }
+  }
+  
+  #ball:nth-child(3) {
+    animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+  }
+  
+  @keyframes bounce-3 {
+    50% {
+      transform: translateY(-18px);
+    }
+  }
+/*----------------------------------------------------------------*/
+@media screen and (max-width:1200px){
+    .players {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:800px){
+    .players {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:600px){
+    .players {
+        display: none;
+    }
+}
+.agents {
+    /*border: solid aquamarine;*/
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: -30%;
+}
+@media screen and (max-width:1200px){
+    .agents {
+        height: 200px;
+        width: 200px;
+        margin-top: -40%;
+    }
+}
+@media screen and (max-width:800px){
+    .agents {
+        height: 150px;
+        width: 150px;
+        margin-top: -50%;
+    }
+}
+@media screen and (max-width:600px){
+    .agents {
+        display: none;
+    }
+}
+.events {
+    /*border: solid aquamarine;*/
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: -40%;
+}
+@media screen and (max-width:1200px){
+    .events {
+        height: 200px;
+        width: 200px;
+        margin-top: -60%;
+    }
+}
+@media screen and (max-width:800px){
+    .events {
+        height: 150px;
+        width: 150px;
+        margin-top: -80%;
+    }
+}
+@media screen and (max-width:600px){
+    .events {
+        display: none;
+    }
+}
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+.logo {
+    /*border: solid greenyellow;*/
+    z-index: 2;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    border-radius: 50% 50% 0 0;
+    cursor: pointer;
+}
+@media screen and (max-width:900px){
+    .logo {
+        height: 200px;
+        width: 300px;
+    }
+}
+/*---------------------Burger Menu-----------------------*/
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition-duration: .5s;
+      z-index: 500;
+      display: none;
+  }
+@media screen and (max-width:600px){
+    .toggle {
+        display: flex;
+        margin-top: -90vh;
+    }
+}
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #00ffff;
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+.slide_panel {
+    position: absolute;
+    z-index: 400;
+    border: solid 1px whitesmoke;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    margin-top: -200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.players_alternative {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+.agents_alternative {
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
+.events_alternative {
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
+/*----------------------------------------------Left Panel----------------------------*/
+
+.left_panel {
+    height: 8vh;
+    width: fit-content;
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*--------------------------------------------Agents Section---------------------------*/
+
+.second_section {
+    /*border: solid red;*/
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Assets/GameCenter/Valorant/Players_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.agents_container {
+    height: 90vh;
+    width: 90%;
+    margin-right: 20px;
+    border: solid 1px whitesmoke;
+    border-top: none;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.agent_card {
+    height: 300px;
+    width: 300px;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(
+    20% 10%,
+    0% 50%,
+    20% 50%,
+    0% 200%,
+    100% 50%,
+    50% 0%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.agent_card:hover {
+    transform: scale(1.1);
+    clip-path: none;
+}
+.agent_description {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+.agent_role {
+    height: 20px;
+    width: 20px;
+}
+.agent_class {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.agent_icon {
+    height: 25px;
+    width: 25px;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+/*--------------------------------------Weapons Section----------------------*/
+
+.third_section {
+    /*border: solid red;*/
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Assets/GameCenter/Valorant/Weapons_background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weapons_container {
+    height: 90vh;
+    width: 90%;
+    border: solid 1px whitesmoke;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.weapons_card {
+    height: 300px;
+    width: 300px;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    background-size: 300px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(
+    20% 10%,
+    0% 50%,
+    20% 50%,
+    0% 200%,
+    100% 50%,
+    50% 0%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.weapons_card:hover {
+    transform: scale(1.1);
+    clip-path: none;
+}
+#display {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    background-color: #1b1b2f;
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    #display {
+        font-size: 10px;
+        height: 20px;
+        width: 60px;
+    }
+}
+.events_card {
+    height: 300px;
+    width: 300px;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    background-size: 300px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(
+    20% 10%,
+    0% 50%,
+    20% 50%,
+    0% 200%,
+    100% 50%,
+    50% 0%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.events_card:hover {
+    transform: scale(1.1);
+    clip-path: none;
+}
+.trophy {
+    height: 50px;
+    width: 50px;
+}
+.event_name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.event_second_name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.event_date {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}

@@ -1,6 +1,7 @@
 //--------------------Movies API----------------------------
 let KEY = "779d63e1"
 let URL = `http://www.omdbapi.com/?apikey=${KEY}`
+let seriesURL = "https://www.episodate.com/api/most-popular?page=1"
 
 const cube = document.querySelector(".cube-container")
 const title = document.querySelector(".input")
@@ -59,8 +60,20 @@ searchButton.addEventListener("click",()=>{
     fetchData()
 })
 
+//---------------------------------------Series API-----------------------------------
+/*
+function fetchSeries () {
+    try {
+        fetch(seriesURL).then(response => response.json()).then(data =>{
+            console.log(data)
+        })
+    } catch (error) {
+        console.log(error)
+    }
+} 
 
-
+fetchSeries()
+*/
 //--------------------------------------------Games API-----------------------------------
 const gamesImages = document.querySelector(".games_images")
 const API_KEY = '57b5ad326494462c9e86dbc4c769f8c7';
@@ -76,14 +89,23 @@ function fetchGamesData () {
         })
     } catch (error) {
         console.log(error)
+        alert(error)
     }
 }
 
-
-fetchGamesData()
-
 /*
-
-gamesImages.style.backgroundImage = `url(${data.results[i].background_image})`
-
+fetchGamesData()
 */
+///---------------------------Redirect to API------------------------
+
+const redirectToAPI = document.querySelector(".powered")
+
+redirectToAPI.addEventListener("click",()=>{
+    window.location.href = "https://www.omdbapi.com/"
+})
+
+const exploreGameCenter = document.querySelector(".explore")
+
+exploreGameCenter.addEventListener("click",()=>{
+    window.location.href = "./GameCenter.html"
+})

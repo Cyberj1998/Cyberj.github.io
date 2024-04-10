@@ -1,0 +1,428 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /*border: solid red;*/
+    width: 100%;
+    height: fit-content;
+    background-color: #454545;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------------------------Search Bar---------------------------*/
+.search_bar {
+  /*border: solid red;*/
+  height: 50px;
+  width: 70%;
+  background-color: #212121;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.search_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.search_icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.search_input {
+  width: 50%;
+  border-radius: 5px;
+  background-color: transparent;
+  border-left: solid 1px whitesmoke;
+  border-bottom: solid 1px whitesmoke;
+  color: whitesmoke;
+}
+
+/*----------------------------------------------------Top Section----------------------------*/
+.top_product {
+    /*border: solid black;*/
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #c8c8c8;
+    -webkit-animation-name: banner_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+@media screen and (max-width:500px){
+  .top_product {
+      height: 30vh;
+  }
+}
+@-webkit-keyframes  banner_animation {
+  0% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  10% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  20% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  30% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  40% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  50% {background-image: url(./Assets/Umagic_20240407_142142283.jpg);}
+  60% {background-image: url(./Assets/Umagic_20240407_142508136.jpg);}
+  70% {background-image: url(./Assets/Umagic_20240407_142508136.jpg);}
+  80% {background-image: url(./Assets/Umagic_20240407_142508136.jpg);}
+  90% {background-image: url(./Assets/Umagic_20240407_142508136.jpg);}
+  100% {background-image: url(./Assets/Umagic_20240407_142508136.jpg);}
+}
+.categories_selector {
+  /*border: solid red;*/
+  height: 200px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #212121;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width:500px){
+  .categories_selector {
+      height: 100px;
+  }
+}
+.all_products {
+    /*border: solid aqua;*/
+    height: fit-content;
+    width: 70%;
+    background-color: #121212;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------------------------Categors--------------------------*/
+.category_card {
+  height: 80%;
+  width: 200px;
+  background-color: #212121;
+  box-shadow: 5px 5px 15px rgba(225, 225, 225, 0.2),
+  15px 15px 15px rgba(0, 0, 0, 0.1),
+  inset -5px -5px 5px rgba(225, 225, 225, 0.2),
+  inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 73% 27% 38% 62% / 47% 61% 39% 53% ;
+  /*border-radius: 32% 68% 71% 29% / 78% 61% 39% 22% ;*/
+  /*border-radius: 81% 19% 73% 27% / 38% 40% 60% 62% ;*/
+  color: #858585;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:1000px){
+  .category_card {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      font-size: 10px;
+  }
+}
+.category_icon {
+  height: 50px;
+  width: 50px;
+}
+@media screen and (max-width:1000px){
+  .category_icon {
+      height: 20px;
+      width: 20px;
+  }
+}
+/*----------------------------------------------UI VERSE PRoduct Card------------------*/
+
+.card {
+    --accent-color: #212121;
+    position: relative;
+    width: 240px;
+    background: #323232;
+    padding: 0.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+    transition: all 0.5s ease-in-out;
+    margin: 5px;
+  }
+  .image-container {
+    /*border: solid red;*/
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    border-top-right-radius: 4rem;
+    margin-bottom: 1rem;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .image_itself {
+    height: 130px;
+    width: 100%;
+  }
+  .card .image-container .price {
+    position: absolute;
+    right: 0.7rem;
+    bottom: -0rem;
+    background: #212121;
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 2rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+  }
+  
+  .card .favorite {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  .card .favorite input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .card .favorite input:checked ~ svg {
+    animation: bouncing 0.5s;
+    fill: rgb(255, 95, 95);
+    filter: drop-shadow(0px 3px 1px rgba(53, 53, 53, 0.14));
+  }
+  
+  .card .favorite svg {
+    fill: #a8a8a8;
+  }
+  
+  .card .content {
+    padding: 0px 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card .content .brand {
+    font-weight: 900;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .card .content .product-name {
+    font-weight: 700;
+    color: #898989;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card .content .color-size-container {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: whitesmoke;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card .content .color-size-container > * {
+    flex: 1;
+  }
+  
+  .card .content .color-size-container .colors .colors-container {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color {
+    height: 14px;
+    position: relative;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color:hover .color-name {
+    display: block;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color a {
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1;
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color .color-name {
+    display: none;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    background: black;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color:first-child a {
+    border-color: #ffd426;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color:nth-child(2) a {
+    background: #144076;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color:nth-child(3) a {
+    border-color: #00b9ff;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .color:nth-child(4) a {
+    border-color: #ff6ba1;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .active {
+    border-color: black;
+  }
+  
+  .card .content .color-size-container .sizes .size-container {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+  }
+  
+  .card .content .color-size-container .sizes .size-container .size {
+    height: 14px;
+  }
+  
+  .card .content .color-size-container .sizes .size-container .size .size-radio {
+    cursor: pointer;
+  }
+  
+  .card .content .color-size-container .sizes .size-container .size .size-radio input {
+    display: none;
+  }
+  
+  .card .content .color-size-container .sizes .size-container .size .size-radio input:checked ~ .name {
+    background: var(--accent-color);
+    border-radius: 2rem 2rem 1.5rem 1.5rem;
+    color: white;
+  }
+  
+  .card .content .color-size-container .sizes .size-container .size .size-radio .name {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    aspect-ratio: 1.2/1;
+    text-decoration: none;
+    color: grey;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  
+  .card .content .rating {
+    /*border: solid red;*/
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .content .rating svg {
+    height: 12px;
+    margin-right: -5em;
+  }
+  
+  .card .button-container {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .card .button-container .button {
+    border-radius: 1.4rem 1.4rem 0.7rem 0.7rem;
+    border: none;
+    padding: 0.5rem 0;
+    background: var(--accent-color);
+    color: whitesmoke;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  .card .button-container .button:hover {
+    background: #454545;
+  }
+  
+  .card .button-container .buy-button {
+    flex: auto;
+  }
+  
+  .card .button-container .cart-button {
+    display: grid;
+    place-content: center;
+    width: 50px;
+  }
+  
+  .card .button-container .cart-button svg {
+    width: 15px;
+    fill: white;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  @keyframes bouncing {
+    from, to {
+      transform: scale(1, 1);
+    }
+  
+    25% {
+      transform: scale(1.5, 2.1);
+    }
+  
+    50% {
+      transform: scale(2.1, 1.5);
+    }
+  
+    75% {
+      transform: scale(1.5, 2.05);
+    }
+  }
+  /*------------------------------Categories with no size color selector---------------*/
+
+  #jewelery {
+    display: none;
+  }
+  #electronics {
+    display: none;
+  }
