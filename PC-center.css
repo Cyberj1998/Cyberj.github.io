@@ -238,13 +238,31 @@ body {
     }
 }
 .games_or_works {
-    background-color: #9cabbe;
     /*border: solid red;*/
+    border: solid 1px whitesmoke;
+    background-color: transparent;
     margin-top: 10px;
     height: 330px;
     width: 500px;
-    border-radius: 10px;
     overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: -15px -15px 15px rgba(225, 225, 225, 0.0),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(225, 225, 225, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #454545;
 }
 @media screen and (max-width:912px){
     .games_or_works{
@@ -273,8 +291,8 @@ body {
     transition: 0.5s;
 }
 .juegos {
-    display: none;
     /*display: inline-block;*/
+    display: none;
 }
 .games_or_works img:hover {
     transform: scale(1.1);
@@ -285,13 +303,14 @@ body {
     width: 300px;
 }
 .components {
-    overflow: scroll;
-    background-color: #9cabbe;
     /*border: solid red;*/
+    overflow: scroll;
+    overflow-x: hidden;
+    border: solid 1px whitesmoke;
+    background-color: transparent;
     margin-top: 10px;
     height: 330px;
     width: 500px;
-    border-radius: 10px;
 }
 .components img {
     height: 100px;

@@ -1,7 +1,7 @@
 //--------------------Movies API----------------------------
 let KEY = "779d63e1"
-let URL = `http://www.omdbapi.com/?apikey=${KEY}`
-let seriesURL = "https://www.episodate.com/api/most-popular?page=1"
+let URL = `https://www.omdbapi.com/?apikey=${KEY}`
+let seriesURL = "https://www.episodate.com/api/most-popular?page=5"
 
 const cube = document.querySelector(".cube-container")
 const title = document.querySelector(".input")
@@ -61,11 +61,31 @@ searchButton.addEventListener("click",()=>{
 })
 
 //---------------------------------------Series API-----------------------------------
-/*
+
+let seriesJson = "./series2.json"
+
 function fetchSeries () {
     try {
-        fetch(seriesURL).then(response => response.json()).then(data =>{
-            console.log(data)
+        fetch(seriesJson).then(response => response.json()).then(data =>{
+            for(i = 0; i <= 20; i ++){
+                console.log(data.tv_shows)
+                cube.style.display = "none"
+                const card = document.createElement("div")
+                card.classList.add("movie_card")
+                card.style.backgroundImage = `url(${data[i].image_thumbnail_path})`
+                movieContainer.appendChild(card)
+        //----------Poster Title Description-------------------
+                const title = document.createElement("h1")
+                title.classList.add("title")
+                title.innerText = `${data[i].name}`
+                card.appendChild(title)
+        //-----------------------
+                const description = document.createElement("p")
+                description.classList.add("description")
+                description.innerText = `${data[i].start_date}`
+                card.appendChild(description)
+                moviesDisplay = true
+            }
         })
     } catch (error) {
         console.log(error)
@@ -73,7 +93,7 @@ function fetchSeries () {
 } 
 
 fetchSeries()
-*/
+
 //--------------------------------------------Games API-----------------------------------
 const gamesImages = document.querySelector(".games_images")
 const API_KEY = '57b5ad326494462c9e86dbc4c769f8c7';
@@ -93,9 +113,9 @@ function fetchGamesData () {
     }
 }
 
-/*
+
 fetchGamesData()
-*/
+
 ///---------------------------Redirect to API------------------------
 
 const redirectToAPI = document.querySelector(".powered")

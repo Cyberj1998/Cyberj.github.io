@@ -4,16 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color:hsla(240,1%,20%,1);
-    background-image:
-    radial-gradient(at 27% 95%, hsla(33,4%,12%,1) 0px, transparent 50%),
-    radial-gradient(at 62% 75%, hsla(250,28%,29%,1) 0px, transparent 50%),
-    radial-gradient(at 46% 2%, hsla(272,49%,22%,1) 0px, transparent 50%),
-    radial-gradient(at 4% 78%, hsla(326,42%,15%,1) 0px, transparent 50%),
-    radial-gradient(at 33% 94%, hsla(209,23%,22%,1) 0px, transparent 50%),
-    radial-gradient(at 41% 62%, hsla(14,3%,13%,1) 0px, transparent 50%),
-    radial-gradient(at 54% 99%, hsla(209,31%,15%,1) 0px, transparent 50%);
-    
+    background-color: #212121;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,7 +150,7 @@ body {
 }
 .search_container {
     /*border: solid springgreen;*/
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -172,17 +163,19 @@ body {
     cursor: pointer;
 }
 .input {
+    width: 80%;
     background-color: transparent;
     border-radius: 5px;
     color: whitesmoke;
     border: none;
+    text-align: center;
     border: solid 1px whitesmoke;
 }
 .movie_container {
     border: solid 1px whitesmoke;
     background-color: transparent;
-    height: 500px;
-    width: 80%;
+    height: 100vh;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

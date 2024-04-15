@@ -57,6 +57,7 @@ const littleBio = document.querySelector(".description_title");
 const projects = document.querySelector(".projects_display");
 
 let español = false
+const download = document.querySelector(".download")
 
 lenguajeToggle.addEventListener("click",()=>{
     if(español == false){
@@ -67,6 +68,7 @@ lenguajeToggle.addEventListener("click",()=>{
         habil.innerText = "Habilidades"
         littleBio.innerText = "Descripción"
         projects.innerText = "Proyectos"
+        download.href = "./Assets/Portfolio Español.png"
         español = true
     }
     else{
@@ -77,6 +79,7 @@ lenguajeToggle.addEventListener("click",()=>{
         habil.innerText = "Skills"
         littleBio.innerText = "About Me"
         projects.innerText = "Projects"
+        download.href = "./Assets/Protfolio English.png"
         español = false
     }
 })
@@ -119,3 +122,8 @@ darkLightToggle.addEventListener("click",()=>{
         dark = true
     }
 })
+
+//------------------------------------------------Download de Image-----------------------------
+
+
+

@@ -1,0 +1,222 @@
+[
+    {
+        "id": 58512,
+        "name": "The Umbrella Academy",
+        "permalink": "the-umbrella-academy",
+        "start_date": "2019-02-15",
+        "end_date": null,
+        "country": "US",
+        "network": "Netflix",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/58512.jpg"
+    },
+    {
+        "id": 51543,
+        "name": "Star Trek: Discovery",
+        "permalink": "star-trek-cbs",
+        "start_date": "2017-09-24",
+        "end_date": null,
+        "country": "US",
+        "network": "Paramount+",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/51543.jpg"
+    },
+    {
+        "id": 57535,
+        "name": "La Casa de Papel",
+        "permalink": "la-casa-de-papel",
+        "start_date": "2017-05-02",
+        "end_date": null,
+        "country": "ES",
+        "network": "Netflix",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/57535.jpg"
+    },
+    {
+        "id": 30949,
+        "name": "Sword Art Online",
+        "permalink": "sword-art-online",
+        "start_date": "2012-07-07",
+        "end_date": null,
+        "country": "JP",
+        "network": "Tokyo MX",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/30949.jpg"
+    },
+    {
+        "id": 27651,
+        "name": "American Gods",
+        "permalink": "american-gods",
+        "start_date": "2017-04-30",
+        "end_date": null,
+        "country": "US",
+        "network": "STARZ",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/27651.jpe"
+    },
+    {
+        "id": 3455,
+        "name": "Family Guy",
+        "permalink": "family-guy",
+        "start_date": "1999-01-31",
+        "end_date": null,
+        "country": "US",
+        "network": "FOX",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/3455.jpg"
+    },
+    {
+        "id": 46475,
+        "name": "Shokugeki no Souma",
+        "permalink": "shokugeki-no-souma",
+        "start_date": "2015-04-04",
+        "end_date": null,
+        "country": "JP",
+        "network": "Tokyo MX",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/46475.jpg"
+    },
+    {
+        "id": 69841,
+        "name": "Jujutsu Kaisen",
+        "permalink": "jujutsu-kaisen",
+        "start_date": "2020-10-02",
+        "end_date": null,
+        "country": "JP",
+        "network": "MBS",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/69841.jpg"
+    },
+    {
+        "id": 33930,
+        "name": "Sense8",
+        "permalink": "sense8",
+        "start_date": "2015-06-05",
+        "end_date": null,
+        "country": "US",
+        "network": "Netflix",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/33930.jpg"
+    },
+    {
+        "id": 4571,
+        "name": "NCIS",
+        "permalink": "ncis",
+        "start_date": "2003-09-23",
+        "end_date": null,
+        "country": "US",
+        "network": "CBS",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/4571.jpg"
+    },
+    {
+        "id": 67629,
+        "name": "House of the Dragon",
+        "permalink": "house-of-the-dragon",
+        "start_date": "2022-08-21",
+        "end_date": null,
+        "country": "US",
+        "network": "HBO",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/67629.jpg"
+    },
+    {
+        "id": 29594,
+        "name": "Elementary",
+        "permalink": "elementary",
+        "start_date": "2012-09-27",
+        "end_date": null,
+        "country": "US",
+        "network": "CBS",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/29594.jpg"
+    },
+    {
+        "id": 24533,
+        "name": "Pretty Little Liars",
+        "permalink": "pretty-little-liars",
+        "start_date": "2010-06-08",
+        "end_date": null,
+        "country": "US",
+        "network": "Freeform",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/24533.jpg"
+    },
+    {
+        "id": 26708,
+        "name": "Homeland",
+        "permalink": "homeland",
+        "start_date": "2011-10-02",
+        "end_date": null,
+        "country": "US",
+        "network": "Showtime",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/26708.jpg"
+    },
+    {
+        "id": 58849,
+        "name": "Marvel's Runaways",
+        "permalink": "marvels-runaways",
+        "start_date": "2017-11-21",
+        "end_date": null,
+        "country": "US",
+        "network": "Hulu",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/58849.jpg"
+    },
+    {
+        "id": 64969,
+        "name": "The Rising of the Shield Hero",
+        "permalink": "the-rising-of-the-shield-hero",
+        "start_date": "2019-01-02",
+        "end_date": null,
+        "country": "JP",
+        "network": "AT-X",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/64969.jpg"
+    },
+    {
+        "id": 37678,
+        "name": "Preacher",
+        "permalink": "preacher",
+        "start_date": "2016-05-22",
+        "end_date": null,
+        "country": "US",
+        "network": "AMC",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/37678.jpg"
+    },
+    {
+        "id": 66274,
+        "name": "Dr. Stone",
+        "permalink": "dr-stone",
+        "start_date": "2019-07-05",
+        "end_date": null,
+        "country": "JP",
+        "network": "Tokyo MX",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/66274.jpg"
+    },
+    {
+        "id": 3126,
+        "name": "Criminal Minds",
+        "permalink": "criminal-minds",
+        "start_date": "2005-09-22",
+        "end_date": null,
+        "country": "US",
+        "network": "Paramount+",
+        "status": "Running",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/3126.jpg"
+    },
+    {
+        "id": 55839,
+        "name": "Marvel's Inhumans",
+        "permalink": "marvel-s-the-inhumans",
+        "start_date": "2017-09-29",
+        "end_date": null,
+        "country": "US",
+        "network": "ABC",
+        "status": "Ended",
+        "image_thumbnail_path": "https://static.episodate.com/images/tv-show/thumbnail/55839.jpg"
+    }
+]

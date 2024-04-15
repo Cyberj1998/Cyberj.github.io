@@ -303,7 +303,7 @@ generate.addEventListener("click",()=>{
         }      
     }
     else{
-        alert("necesita seleccionar al menos tres videojuegos")
+        alert("necesita seleccionar al menos tres videojuegos o un trabajo")
     }
 })
 
