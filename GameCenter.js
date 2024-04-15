@@ -82,7 +82,8 @@ let nextGames = `https://api.rawg.io/api/games?key=${API_KEY}&dates=${currentYea
 
 let lastYearURL = `https://api.rawg.io/api/games?key=${API_KEY}&dates=2023-01-01,${currentYear}-01-01&ordering=-added`
 
-
+let thisWeekJson = "thisWeekGames.json"
+let nextReleasesJson = "nextReleases.json"
 /*
 let gamesURL = "./games.json"
 */
@@ -174,7 +175,7 @@ const thisWeek = document.querySelector(".this_week")
 thisWeek.addEventListener("click",()=>{
     gamesSectionTitle.innerHTML = `This <span>Week</span>`
     gamesContainer.innerHTML = ""
-    fetchGames(gamesURLThisWeek)
+    fetchGames(thisWeekJson)
 })
 //--------------------------------------
 const nextReleases = document.querySelector(".Next_week")
@@ -182,7 +183,7 @@ const nextReleases = document.querySelector(".Next_week")
 nextReleases.addEventListener("click",()=>{
     gamesSectionTitle.innerHTML = `Next <span>Releases</span>`
     gamesContainer.innerHTML = ""
-    fetchGames(nextGames)
+    fetchGames(nextReleasesJson)
 })
 //--------------------------------------
 const lastYear = document.querySelector(".last_year")
