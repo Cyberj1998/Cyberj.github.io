@@ -123,7 +123,13 @@ darkLightToggle.addEventListener("click",()=>{
     }
 })
 
-//------------------------------------------------Download de Image-----------------------------
+//-------------------------Youtube Redirect---------------------------------
+
+const youtube = document.querySelector(".Btn")
+
+youtube.addEventListener("click",()=>{
+    window.location.href = "https://www.youtube.com/@JoseAlfonso-wn5mx"
+})
 
 
 
