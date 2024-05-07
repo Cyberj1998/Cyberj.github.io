@@ -1,0 +1,895 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(#ffd180, #ff9100);
+}
+/*---------------------------------------------Header------------------------------------------*/
+.header {
+    /*border: solid red;*/
+    border-bottom: solid 1px whitesmoke;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+.logo {
+    margin-left: 50px;
+}
+@media screen and (max-width:500px){
+    .logo {
+        margin-left: 20px;
+    }
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+@media screen and (max-width:500px){
+    .list {
+        display: none;
+    }
+}
+.item {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 50px;
+}
+@media screen and (max-width:900px){
+    .item {
+        margin: 20px;
+    }
+}
+.cart_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.cart {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.number_of_products {
+    position: absolute;
+    z-index: 1;
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+/*----------------------------------Burger Menu---------------------------*/
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+    display: none;
+    margin-right: 20px;
+  }
+@media screen and (max-width:500px){
+    .toggle {
+        display: flex;
+    }
+}
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    display: none;
+  }
+  @media screen and (max-width:500px){
+    .bars {
+        display: inline-block;
+    }
+}
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  /*-----------------------------------------Slider Panel----------------------------*/
+  .slider_panel {
+      height: 100vh;
+      width: 50%;
+      backdrop-filter: blur(5px);
+      border: solid 1px whitesmoke;
+      margin-left: -50%;
+      transition: 0.5s;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 60;
+  }
+  .list_slider {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.item_slider {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+}
+.cart_slider {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+/*---------------------------------------------------Hero--------------------------------*/
+.hero {
+    /*border: solid aqua;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:900px){
+    .hero {
+        flex-direction: column;
+    }
+}
+.left_section {
+    /*border: solid greenyellow;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_container {
+    /*border: solid black;*/
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+@media screen and (max-width:900px){
+    .info_container {
+        font-size: 15px;
+        align-items: center;
+    }
+}
+.info_container span {
+    color: green;
+}
+.info_container p {
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+}
+@media screen and (max-width:900px){
+    .info_container p {
+        font-size: 9px;
+    }
+}
+.info_container button {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.info_container button:hover {
+    color: black;
+    transform: scale(1.1);
+}
+@media screen and (max-width:900px){
+    .left_section {
+        height: 50%;
+        width: 100%;
+    }
+}
+.right_section {
+    /*border: solid magenta;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .right_section {
+        height: 50%;
+        width: 100%;
+    }
+}
+.chip_bags_container {
+    /*border: solid blue;*/
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bag {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    transition: 3s;
+}
+@media screen and (max-width:900px){
+    #bag {
+        height: 200px;
+        width: 150px;
+        transition: 0s;
+    }
+}
+/*----------------------------------------------------------------------------------------*/
+.bag5 {
+    transform: rotate(-80deg);
+    margin-bottom: -10%;
+}
+.bag4 {
+    transform: rotate(-60deg);
+}
+.bag3 {
+    transform: rotate(-40deg);
+}
+.bag2 {
+    transform: rotate(-20deg);
+}
+#ingridient {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 50;
+    transition: 3s;
+}
+@media screen and (max-width:900px){
+    #ingridient {
+        transition: 0s;
+    }
+} 
+.ingridient1 {
+    margin-top: -450px;
+}
+@media screen and (max-width:900px){
+    .ingridient1 {
+        margin-top: -200px;
+    }
+}
+.ingridient2 {
+    margin-bottom: -500px;
+}
+@media screen and (max-width:900px){
+    .ingridient2 {
+        margin-bottom: -200px;
+    }
+}
+.ingridient3 {
+    margin-right: -400px;
+}
+@media screen and (max-width:900px){
+    .ingridient3 {
+        margin-right: -200px;
+    }
+}
+.ingridient4 {
+    margin-left: -500px;
+}
+@media screen and (max-width:900px){
+    .ingridient4 {
+        margin-left: -200px;
+    }
+}
+.ingridient5 {
+    margin-top: -300px;
+    margin-left: -300px;
+}
+@media screen and (max-width:900px){
+    .ingridient5 {
+        margin-top: -200px;
+        margin-left: -200px;
+    }
+}
+/*--------------------------------------------Nutrition Section---------------------------*/
+.intro_section {
+    /*border: solid mediumorchid;*/
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:900px){
+    .intro_section {
+        flex-direction: column;
+    }
+}
+.intro_left {
+    /*border: solid chartreuse;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .intro_left {
+        height: 70vh;
+        width: 100%;
+        position: absolute;
+    }
+}
+@media screen and (max-width:500px){
+    .intro_left {
+        height: 70vh;
+        width: 100%;
+        position: absolute;
+    }
+}
+.intro_right {
+    /*border: solid violet;*/
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+@media screen and (max-width:900px){
+    .intro_right {
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+    }
+}
+.text_intro {
+    /*border: solid lawngreen;*/
+    width: 600px;
+    padding: 10px;
+    backdrop-filter: blur(1px);
+    border-bottom: solid 1px whitesmoke;
+    border-right: solid 1px whitesmoke;
+}
+@media screen and (max-width:500px){
+    .text_intro {
+        width: 300px;
+    }
+}
+.text_intro span {
+    color: green;
+    font-size: 20px;
+    font-weight: 900;
+}
+.care_chips {
+    height: 300px;
+    width: 400px;
+    -webkit-animation-name: product_animation;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+@media screen and (max-width:900px){
+    .care_chips {
+        height: 200px;
+        width: 300px;
+    }
+}
+/*----------------------------------------------Machine Section----------------------------*/
+.machine_section {
+    /*border: solid aqua;*/
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:900px){
+    .machine_section {
+        flex-direction: column;
+    }
+}
+.machine_container {
+    /*border: solid maroon;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:900px){
+    .machine_container {
+        height: 50%;
+        width: 100%;
+    }
+}
+.product_info_section {
+    /*border: solid lawngreen;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text_container {
+    position: absolute;
+    z-index: 2;
+}
+.man {
+    position: absolute;
+    height: 500px;
+    width: 400px;
+}
+@media screen and (max-width:900px){
+    .man {
+        height: 250px;
+        width: 200px;
+    }
+}
+.product_info_one, .product_info_two, .product_info_three {
+    margin: 15px;
+    margin-left: -100%;
+    font-weight: 700;
+    height: fit-content;
+    width: 300px;
+    padding: 5px;
+}
+@media screen and (max-width:900px){
+    .product_info_one, .product_info_two, .product_info_three {
+        margin-left: -40%;
+    }
+}
+@media screen and (max-width:1100px){
+    .product_info_one, .product_info_two, .product_info_three {
+        font-size: 10px;
+        margin-left: -70%;
+    }
+}
+@media screen and (max-width:960px){
+    .product_info_one, .product_info_two, .product_info_three {
+        margin-left: -50%;
+    }
+}
+@media screen and (max-width:900px){
+    .product_info_section {
+        height: 50%;
+        width: 100%;
+        font-size: 10px;
+    }
+}
+.machine {
+    height: 350px;
+    width: 350px;
+    background-image: url(./Assets/machine_upper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.machine_bottom {
+    background-color: transparent;
+    background-image: url(./Assets/machine_bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 365px;
+    height: 150px;
+}
+@media screen and (max-width:900px){
+    .machine_bottom {
+        width: 208px;
+        height: 70px;
+    }
+}
+@media screen and (max-width:900px){
+    .machine {
+        height: 200px;
+        width: 200px;
+    }
+}
+.product {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;;
+    margin: 10px;
+}
+.product:hover {
+    -webkit-animation-name: product_animation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+@media screen and (max-width:900px){
+    .product {
+        height: 80px;
+        width: 45px;
+    }
+}
+@-webkit-keyframes product_animation {
+    0% {transform: rotate(10deg);}
+    10% {transform: rotate(-10deg);}
+    20% {transform: rotate(10deg);}
+    30% {transform: rotate(-10deg);}
+    40% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    60% {transform: rotate(10deg);}
+    70% {transform: rotate(-10deg);}
+    80% {transform: rotate(10deg);}
+    90% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+.product_animation1 {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;
+    margin: 10px;
+    -webkit-animation-name: product_fall;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+.product_animation2 {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;
+    margin: 10px;
+    -webkit-animation-name: product_fall;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+.product_animation3 {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;
+    margin: 10px;
+    -webkit-animation-name: product_fall;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+.product_animation4 {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;
+    margin: 10px;
+    -webkit-animation-name: product_fall;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+.product_animation5 {
+    cursor: pointer;
+    height: 120px;
+    width: 90px;
+    margin: 10px;
+    -webkit-animation-name: product_fall;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state: running;
+}
+@-webkit-keyframes product_fall {
+    0% {margin-top: -5px;
+    transform: rotate(5deg);}
+    10% {margin-top: 50px;
+        transform: rotate(10deg);}
+    20% {margin-top: 100px;
+        transform: rotate(20deg);}
+    30% {margin-top: 200px;
+        transform: rotate(30deg);}
+    40% {margin-top: 300px;
+        transform: rotate(40deg);}
+    50% {margin-top: 400px;
+        transform: rotate(50deg);}
+    60% {margin-top: 500px;
+        transform: rotate(60deg);}
+    70% {margin-top: 600px;
+        transform: rotate(70deg);}
+    80% {margin-top: 700px;
+        transform: rotate(80deg);
+    opacity: 0%;}
+    90% {margin-top: -800px;
+    opacity: 0%;}
+    92%{
+        opacity: 0%;
+    }
+    95%{
+        opacity: 0%;
+    }
+    98%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/*----------------------------------------------Contact Section---------------------------------*/
+.contact_section {
+    /*border: solid hotpink;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .contact_section {
+        height: 80vh;
+    }
+}
+.contact_panel {
+    height: 500px;
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: -15px -15px 15px rgba(225, 225, 225, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(225, 225, 225, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .contact_panel {
+        height: 300px;
+    }
+}
+.contact_title {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+}
+@media screen and (max-width:900px){
+    .contact_title {
+        font-size: 25px;
+    }
+}
+.contact_title span {
+    color: green;
+}
+#insta {
+    height: 35px;
+}
+@media screen and (max-width:900px){
+    #insta {
+        height: 25px;
+        width: 25px;
+    }
+}
+.socials {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+@media screen and (max-width:900px){
+    .socials {
+        height: 30px;
+        width: 30px;
+    }
+}
+.contact_panel p {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media screen and (max-width:900px){
+    .contact_panel p {
+        margin-top: 0px;
+    }
+}
+.socials_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------------------Payment Section----------------------*/
+.modal {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 700;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.payment_panel {
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 70%;
+    box-shadow: -15px -15px 15px rgba(225, 225, 225, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(225, 225, 225, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .payment_panel {
+        flex-direction: column;
+    }
+}
+.left_section_modal {
+    /*border: solid red;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .left_section_modal {
+        height: 50%;
+        width: 100%;
+    }
+}
+.right_section_modal {
+    /*border: solid green;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .right_section_modal {
+        height: 50%;
+        width: 100%;
+    }
+}
+.total_to_pay {
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    border-bottom: solid 1px whitesmoke;
+}
+.paypal_button {
+    height: 50px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    margin-top: 10px;
+}
+.paypal_button img {
+    height: 50px;
+    width: 80%px;
+}
+.payment_methods {
+    height: 100px;
+    width: 80%;
+    margin-top: 10px;
+}
+.line {
+    background-color: whitesmoke;
+    height: 80%;
+    width: 1px;
+    transform: rotate(180deg);
+}
+@media screen and (max-width:900px){
+    .line {
+       transform: rotate(180deg);
+       height: 1px;
+       width: 80%;
+    }
+}
+#bag_payment {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+}
+@media screen and (max-width:1236px){
+    #bag_payment {
+        height: 250px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:1236px){
+    #bag_payment {
+        height: 250px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:1034px){
+    #bag_payment {
+        height: 200px;
+        width: 150px;
+    }
+}
+.chip_bag3_payment {
+    transform: rotate(70deg);
+}
+.chip_bag2_payment {
+    transform: rotate(50deg);
+}
+.chip_bag1_payment {
+    transform: rotate(30deg);
+}

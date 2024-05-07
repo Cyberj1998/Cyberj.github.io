@@ -3,7 +3,8 @@ const segundoPanel = document.getElementById('project2')
 const tercerPanel = document.getElementById('project3')
 const cuartoPanel = document.getElementById('project4')
 const quintoPanel = document.getElementById('project5')
-sextoPanel = document.getElementById('project6')
+const sextoPanel = document.getElementById('project6')
+const septimoPanel = document.getElementById('project7')
 const lenguajeToggle = document.querySelector(".toggle")
 
 
@@ -34,6 +35,11 @@ setTimeout(() => {
 setTimeout(() => {
     sextoPanel.style.display = "block"
     sextoPanel.classList.add("image_animation")
+}, 5000);
+
+setTimeout(() => {
+    septimoPanel.style.display = "block"
+    septimoPanel.classList.add("image_animation")
 }, 5000);
 
 
